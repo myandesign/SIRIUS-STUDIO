@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIRIUS STUDIO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/bootstrap.css">
+    <link rel="stylesheet" href="style/style.css">
+
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="#"><img src="images/logo.svg" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Кейсы</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Услуги</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+
+                    <a href="" class="my-2 my-lg-0 button-primary">Стать клиентом</a>
+                    <!-- <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form> -->
+                </div>
+            </nav>
+
+            <div class="header-title">
+                <h1>Разрабатываем продающие сайты для вашего бизнеса</h1>
+                <p class="subtitle">Мы лучше всех объединяем и разрабатываем продающий продукт для вас с помощью
+                    стратегии продуманной для каждого клиента, которые приносят пользу компаниям и меняют их.</p>
+            </div>
+            <a href="" class="button-primary active-button">Наши работы</a>
+        </div>
+
+        <!-- Slider -->
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/Rocket.png" alt=""></div>
+                <div class="swiper-slide"><img src="images/Bariatta.png" alt=""></div>
+                <div class="swiper-slide"><img src="images/CrontonCapital.png" alt=""></div>
+                <div class="swiper-slide"><img src="images/ShinyWorld.png" alt=""></div>
+                <div class="swiper-slide"><img src="images/Stryds.png" alt=""></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </header>
+
+
+    <script src="script/bootstrap.min.js"></script>
+    <script src="script/app.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          pagination: {
+            el: "",
+            clickable: true,
+          },
+        });
+      </script>
+</body>
+
+</html>
